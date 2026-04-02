@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC Games - Play Free Games Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <h1 class="logo">🎮 KC Games</h1>
+            <input type="text" id="searchBox" class="search-box" placeholder="Search games...">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Play Free Games Online</h2>
+            <p>Explore our collection of awesome games</p>
+            <button class="cta-button">Play Now</button>
+        </div>
+    </section>
+
+    <section class="games-section">
+        <div class="container">
+            <h2 class="section-title">Featured Games</h2>
+            <div class="games-grid" id="gamesGrid">
+                <!-- Games will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <div id="gameModal" class="modal">
+        <span class="close" onclick="closeGame()">&times;</span>
+        <div class="modal-content" id="gamePlayer"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 KC Games. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
